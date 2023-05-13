@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_infos",
+  "info": {
+    "name": "UserInfo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UserId": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone_number": {
+      "type": "integer"
+    },
+    "state": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_carts",
+  "info": {
+    "name": "UserCart"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UserId": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "ItemCart": {
+      "type": "component",
+      "repeatable": true,
+      "component": "custom.item-cart"
+    }
+  }
+}
